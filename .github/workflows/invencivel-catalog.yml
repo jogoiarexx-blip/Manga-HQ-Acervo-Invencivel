@@ -1,0 +1,126 @@
+name: Gerar catálogo e capas do Invencível
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '*.pdf'
+      - '.github/workflows/invencivel-catalog.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: invencivel-catalog
+  cancel-in-progress: true
+
+jobs:
+  catalogo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependências
+        run: python -m pip install --upgrade pymupdf pillow
+
+      - name: Gerar catálogo e capas
+        shell: bash
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          from urllib.parse import quote
+          import json, re, fitz
+          from PIL import Image
+
+          root = Path('.')
+          raw = 'https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/'
+          title = 'Invencível'
+          collection_id = 'invencivel'
+
+          def url_path(path):
+              return '/'.join(quote(part, safe='') for part in Path(path).as_posix().split('/'))
+
+          def issue_number(path):
+              m = re.search(r'#\s*(\d+)\.pdf$', path.name, re.I)
+              return int(m.group(1)) if m else 999999
+
+          items = []
+          for pdf in sorted(root.glob('*.pdf'), key=issue_number):
+              issue = issue_number(pdf)
+              if issue == 999999:
+                  print('Ignorado sem número:', pdf)
+                  continue
+
+              cover = pdf.with_name(pdf.stem + '-cover.webp')
+              doc = fitz.open(pdf)
+              try:
+                  page_count = doc.page_count
+                  if not cover.exists() or cover.stat().st_mtime < pdf.stat().st_mtime:
+                      page = doc.load_page(0)
+                      pix = page.get_pixmap(matrix=fitz.Matrix(1.7, 1.7), alpha=False)
+                      image = Image.frombytes('RGB', (pix.width, pix.height), pix.samples)
+                      image.thumbnail((900, 1400), Image.Resampling.LANCZOS)
+                      image.save(cover, 'WEBP', quality=84, method=6)
+                      print('CAPA:', cover)
+              finally:
+                  doc.close()
+
+              items.append({
+                  'id': f'invencivel-{issue}',
+                  'issue': issue,
+                  'title': f'{title} #{issue}',
+                  'format': 'pdf',
+                  'file': raw + url_path(pdf),
+                  'cover': raw + url_path(cover),
+                  'size': pdf.stat().st_size,
+                  'pageCount': page_count,
+                  'collectionId': collection_id,
+                  'collectionTitle': title
+              })
+
+          catalog = {
+              'schemaVersion': 1,
+              'name': 'Manga HQ Acervo Invencível',
+              'format': 'pdf',
+              'supportedFormats': ['pdf'],
+              'collections': [{
+                  'id': collection_id,
+                  'title': title,
+                  'issues': [{k:v for k,v in item.items() if k not in ('collectionId','collectionTitle')} for item in items]
+              }],
+              'items': items,
+              'itemCount': len(items),
+              'assetHost': 'raw.githubusercontent.com',
+              'assetBase': raw
+          }
+
+          Path('catalogo.json').write_text(
+              json.dumps(catalog, ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8'
+          )
+          print('PDFs catalogados:', len(items))
+          PY
+
+      - name: Salvar alterações
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalogo.json
+          find . -maxdepth 1 -name '*-cover.webp' -print0 | xargs -0 -r git add
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração necessária."
+          else
+            git commit -m "Gerar catálogo e capas do Invencível"
+            git pull --rebase origin main
+            git push
+          fi
