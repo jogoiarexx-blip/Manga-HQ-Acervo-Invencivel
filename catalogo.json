@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "name": "Manga HQ Acervo Invencível",
+  "format": "pdf",
+  "supportedFormats": [
+    "pdf"
+  ],
+  "collections": [
+    {
+      "id": "invencivel",
+      "title": "Invencível",
+      "issues": [
+        {
+          "id": "invencivel-1",
+          "issue": 1,
+          "title": "Invencível #1",
+          "format": "pdf",
+          "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%231.pdf",
+          "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%231-cover.webp",
+          "size": 10347322,
+          "pageCount": 26
+        },
+        {
+          "id": "invencivel-2",
+          "issue": 2,
+          "title": "Invencível #2",
+          "format": "pdf",
+          "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%232.pdf",
+          "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%232-cover.webp",
+          "size": 9622957,
+          "pageCount": 23
+        },
+        {
+          "id": "invencivel-3",
+          "issue": 3,
+          "title": "Invencível #3",
+          "format": "pdf",
+          "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%233.pdf",
+          "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%233-cover.webp",
+          "size": 10249126,
+          "pageCount": 23
+        },
+        {
+          "id": "invencivel-4",
+          "issue": 4,
+          "title": "Invencível #4",
+          "format": "pdf",
+          "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%234.pdf",
+          "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%234-cover.webp",
+          "size": 8372320,
+          "pageCount": 23
+        },
+        {
+          "id": "invencivel-5",
+          "issue": 5,
+          "title": "Invencível #5",
+          "format": "pdf",
+          "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%235.pdf",
+          "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%235-cover.webp",
+          "size": 2647651,
+          "pageCount": 22
+        },
+        {
+          "id": "invencivel-6",
+          "issue": 6,
+          "title": "Invencível #6",
+          "format": "pdf",
+          "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%236.pdf",
+          "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%236-cover.webp",
+          "size": 5347144,
+          "pageCount": 23
+        },
+        {
+          "id": "invencivel-7",
+          "issue": 7,
+          "title": "Invencível #7",
+          "format": "pdf",
+          "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%237.pdf",
+          "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%237-cover.webp",
+          "size": 9562652,
+          "pageCount": 24
+        },
+        {
+          "id": "invencivel-8",
+          "issue": 8,
+          "title": "Invencível #8",
+          "format": "pdf",
+          "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%238.pdf",
+          "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%238-cover.webp",
+          "size": 8411572,
+          "pageCount": 23
+        },
+        {
+          "id": "invencivel-9",
+          "issue": 9,
+          "title": "Invencível #9",
+          "format": "pdf",
+          "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%239.pdf",
+          "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%239-cover.webp",
+          "size": 10090500,
+          "pageCount": 28
+        },
+        {
+          "id": "invencivel-10",
+          "issue": 10,
+          "title": "Invencível #10",
+          "format": "pdf",
+          "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%2310.pdf",
+          "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%2310-cover.webp",
+          "size": 7828597,
+          "pageCount": 25
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "invencivel-1",
+      "issue": 1,
+      "title": "Invencível #1",
+      "format": "pdf",
+      "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%231.pdf",
+      "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%231-cover.webp",
+      "size": 10347322,
+      "pageCount": 26,
+      "collectionId": "invencivel",
+      "collectionTitle": "Invencível"
+    },
+    {
+      "id": "invencivel-2",
+      "issue": 2,
+      "title": "Invencível #2",
+      "format": "pdf",
+      "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%232.pdf",
+      "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%232-cover.webp",
+      "size": 9622957,
+      "pageCount": 23,
+      "collectionId": "invencivel",
+      "collectionTitle": "Invencível"
+    },
+    {
+      "id": "invencivel-3",
+      "issue": 3,
+      "title": "Invencível #3",
+      "format": "pdf",
+      "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%233.pdf",
+      "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%233-cover.webp",
+      "size": 10249126,
+      "pageCount": 23,
+      "collectionId": "invencivel",
+      "collectionTitle": "Invencível"
+    },
+    {
+      "id": "invencivel-4",
+      "issue": 4,
+      "title": "Invencível #4",
+      "format": "pdf",
+      "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%234.pdf",
+      "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%234-cover.webp",
+      "size": 8372320,
+      "pageCount": 23,
+      "collectionId": "invencivel",
+      "collectionTitle": "Invencível"
+    },
+    {
+      "id": "invencivel-5",
+      "issue": 5,
+      "title": "Invencível #5",
+      "format": "pdf",
+      "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%235.pdf",
+      "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%235-cover.webp",
+      "size": 2647651,
+      "pageCount": 22,
+      "collectionId": "invencivel",
+      "collectionTitle": "Invencível"
+    },
+    {
+      "id": "invencivel-6",
+      "issue": 6,
+      "title": "Invencível #6",
+      "format": "pdf",
+      "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%236.pdf",
+      "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%236-cover.webp",
+      "size": 5347144,
+      "pageCount": 23,
+      "collectionId": "invencivel",
+      "collectionTitle": "Invencível"
+    },
+    {
+      "id": "invencivel-7",
+      "issue": 7,
+      "title": "Invencível #7",
+      "format": "pdf",
+      "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%237.pdf",
+      "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%237-cover.webp",
+      "size": 9562652,
+      "pageCount": 24,
+      "collectionId": "invencivel",
+      "collectionTitle": "Invencível"
+    },
+    {
+      "id": "invencivel-8",
+      "issue": 8,
+      "title": "Invencível #8",
+      "format": "pdf",
+      "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%238.pdf",
+      "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%238-cover.webp",
+      "size": 8411572,
+      "pageCount": 23,
+      "collectionId": "invencivel",
+      "collectionTitle": "Invencível"
+    },
+    {
+      "id": "invencivel-9",
+      "issue": 9,
+      "title": "Invencível #9",
+      "format": "pdf",
+      "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%239.pdf",
+      "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%239-cover.webp",
+      "size": 10090500,
+      "pageCount": 28,
+      "collectionId": "invencivel",
+      "collectionTitle": "Invencível"
+    },
+    {
+      "id": "invencivel-10",
+      "issue": 10,
+      "title": "Invencível #10",
+      "format": "pdf",
+      "file": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%2310.pdf",
+      "cover": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/Invenc%C3%ADvel%20%2310-cover.webp",
+      "size": 7828597,
+      "pageCount": 25,
+      "collectionId": "invencivel",
+      "collectionTitle": "Invencível"
+    }
+  ],
+  "itemCount": 10,
+  "assetHost": "raw.githubusercontent.com",
+  "assetBase": "https://raw.githubusercontent.com/jogoiarexx-blip/Manga-HQ-Acervo-Invencivel/main/"
+}
